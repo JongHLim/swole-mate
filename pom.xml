@@ -14,7 +14,7 @@
   </parent>
   <groupId>me.jonlim</groupId>
   <artifactId>swole-mate</artifactId>
-  <version>0.0.1</version>
+  <version>0.0.2-SNAPSHOT</version>
   <name>swole-mate</name>
   <description>Web application to keep track of workouts</description>
 
@@ -45,7 +45,7 @@
 
   <scm>
     <developerConnection>scm:git:https://github.com/JongHLim/swole-mate.git</developerConnection>
-    <tag>swole-mate-0.0.1</tag>
+    <tag>HEAD</tag>
   </scm>
 
 </project>
