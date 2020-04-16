@@ -1,10 +1,14 @@
 package me.jonlim.model;
 
+import java.util.Set;
+
 public class Exercise extends BaseEntity {
 
   private ExerciseType exerciseType;
 
   private ExerciseSet exerciseSet;
+
+  private Set<ExerciseSet> exerciseSetSet;
 
   public ExerciseType getExerciseType() {
     return exerciseType;
@@ -12,5 +16,21 @@ public class Exercise extends BaseEntity {
 
   public void setExerciseType(ExerciseType exerciseType) {
     this.exerciseType = exerciseType;
+  }
+
+  public ExerciseSet getExerciseSet() {
+    return exerciseSet;
+  }
+
+  public void setExerciseSet(ExerciseSet exerciseSet) {
+    this.exerciseSet = exerciseSet;
+  }
+
+  public Set<ExerciseSet> getExerciseSetSet() {
+    return exerciseSetSet;
+  }
+
+  public void setExerciseSetSet(Set<ExerciseSet> exerciseSetSet) {
+    this.exerciseSetSet = exerciseSetSet;
   }
 }
