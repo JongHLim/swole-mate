@@ -1,6 +1,6 @@
 package me.jonlim.model;
 
-public class WorkoutType {
+public class WorkoutType extends BaseEntity {
 
   private String workoutName;
 

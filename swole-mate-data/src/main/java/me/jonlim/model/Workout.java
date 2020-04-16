@@ -2,7 +2,7 @@ package me.jonlim.model;
 
 import java.time.LocalDate;
 
-public class Workout {
+public class Workout extends BaseEntity {
 
   private LocalDate workoutDate;
   private WorkoutType workoutType;

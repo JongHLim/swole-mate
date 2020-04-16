@@ -1,6 +1,6 @@
 package me.jonlim.model;
 
-public class ExerciseSet {
+public class ExerciseSet extends BaseEntity {
 
   private int sets;
   private int reps;
