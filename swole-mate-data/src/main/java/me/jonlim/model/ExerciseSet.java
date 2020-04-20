@@ -6,6 +6,12 @@ public class ExerciseSet extends BaseEntity {
   private int reps;
   private int weight;
 
+  public ExerciseSet(int sets, int reps, int weight) {
+    this.sets = sets;
+    this.reps = reps;
+    this.weight = weight;
+  }
+
   public int getSets() {
     return sets;
   }

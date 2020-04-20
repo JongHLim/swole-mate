@@ -10,6 +10,12 @@ public class Exercise extends BaseEntity {
 
   private Set<ExerciseSet> exerciseSetSet;
 
+  public Exercise(ExerciseType exerciseType, ExerciseSet exerciseSet, Set<ExerciseSet> exerciseSetSet) {
+    this.exerciseType = exerciseType;
+    this.exerciseSet = exerciseSet;
+    this.exerciseSetSet = exerciseSetSet;
+  }
+
   public ExerciseType getExerciseType() {
     return exerciseType;
   }

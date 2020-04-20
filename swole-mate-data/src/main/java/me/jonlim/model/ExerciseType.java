@@ -4,6 +4,10 @@ public class ExerciseType extends BaseEntity {
 
   private String exerciseName;
 
+  public ExerciseType(String exerciseName) {
+    this.exerciseName = exerciseName;
+  }
+
   public String getExerciseName() {
     return exerciseName;
   }
