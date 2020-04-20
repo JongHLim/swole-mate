@@ -6,13 +6,10 @@ public class Exercise extends BaseEntity {
 
   private ExerciseType exerciseType;
 
-  private ExerciseSet exerciseSet;
-
   private Set<ExerciseSet> exerciseSetSet;
 
-  public Exercise(ExerciseType exerciseType, ExerciseSet exerciseSet, Set<ExerciseSet> exerciseSetSet) {
+  public Exercise(ExerciseType exerciseType, Set<ExerciseSet> exerciseSetSet) {
     this.exerciseType = exerciseType;
-    this.exerciseSet = exerciseSet;
     this.exerciseSetSet = exerciseSetSet;
   }
 
@@ -22,14 +19,6 @@ public class Exercise extends BaseEntity {
 
   public void setExerciseType(ExerciseType exerciseType) {
     this.exerciseType = exerciseType;
-  }
-
-  public ExerciseSet getExerciseSet() {
-    return exerciseSet;
-  }
-
-  public void setExerciseSet(ExerciseSet exerciseSet) {
-    this.exerciseSet = exerciseSet;
   }
 
   public Set<ExerciseSet> getExerciseSetSet() {
