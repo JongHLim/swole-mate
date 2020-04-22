@@ -14,6 +14,7 @@
     <th>Date</th>
     <th>Workout Type</th>
     <th>Exercises</th>
+    <th>Volume</th>
   </tr>
   </thead>
   <tbody>
@@ -25,6 +26,19 @@
         <tbody>
           <tr th:each="exercise : ${workout.exercises}">
             <td th:text="${exercise.exerciseType}">Deadlift</td>
+            <td>
+
+              <table>
+                <tbody>
+                <tr th:each="exerciseSet : ${exercise.exerciseSetList}">
+                  <td th:text="${exerciseSet.sets + ' sets X ' + exerciseSet.reps + ' reps X ' + exerciseSet.weight + ' pounds'}">
+                    5 x 10 x 225
+                  </td>
+                </tr>
+                </tbody>
+              </table>
+
+            </td>
           </tr>
         </tbody>
       </table>
