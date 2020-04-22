@@ -1,11 +1,13 @@
-package me.jonlim.services.map;
+package me.jonlim.swolemate.services.map;
 
-import me.jonlim.model.Exercise;
-import me.jonlim.services.CrudService;
+import me.jonlim.swolemate.model.Exercise;
+import me.jonlim.swolemate.services.ExerciseService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
-public class ExerciseServiceMap extends AbstractMapService<Exercise, Long> implements CrudService<Exercise, Long> {
+@Service
+public class ExerciseServiceMap extends AbstractMapService<Exercise, Long> implements ExerciseService {
 
   @Override
   public Set<Exercise> findAll() {
@@ -19,7 +21,7 @@ public class ExerciseServiceMap extends AbstractMapService<Exercise, Long> imple
 
   @Override
   public Exercise save(Exercise object) {
-    return super.save(object.getId(), object);
+    return super.save(object);
   }
 
   @Override
@@ -30,5 +32,10 @@ public class ExerciseServiceMap extends AbstractMapService<Exercise, Long> imple
   @Override
   public void deleteById(Long id) {
     super.deleteById(id);
+  }
+
+  @Override
+  public Exercise findByName(String name) {
+    return null;
   }
 }

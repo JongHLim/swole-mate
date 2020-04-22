@@ -1,13 +1,13 @@
-package me.jonlim.services.map;
+package me.jonlim.swolemate.services.map;
 
-import me.jonlim.model.Exercise;
-import me.jonlim.model.Workout;
-import me.jonlim.services.CrudService;
+import me.jonlim.swolemate.model.Workout;
+import me.jonlim.swolemate.services.WorkoutService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
-public class WorkoutServiceMap extends AbstractMapService<Workout, Long> implements CrudService<Workout, Long> {
-
+@Service
+public class WorkoutServiceMap extends AbstractMapService<Workout, Long> implements WorkoutService{
 
   @Override
   public Set<Workout> findAll() {
@@ -21,7 +21,7 @@ public class WorkoutServiceMap extends AbstractMapService<Workout, Long> impleme
 
   @Override
   public Workout save(Workout object) {
-    return super.save(object.getId(), object);
+    return super.save(object);
   }
 
   @Override

@@ -1,4 +1,4 @@
-package me.jonlim.model;
+package me.jonlim.swolemate.model;
 
 import java.time.LocalDate;
 import java.util.Set;
@@ -29,5 +29,13 @@ public class Workout extends BaseEntity {
 
   public void setWorkoutType(WorkoutType workoutType) {
     this.workoutType = workoutType;
+  }
+
+  public Set<Exercise> getExercises() {
+    return exercises;
+  }
+
+  public void setExercises(Set<Exercise> exercises) {
+    this.exercises = exercises;
   }
 }

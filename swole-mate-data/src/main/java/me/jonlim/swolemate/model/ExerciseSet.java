@@ -1,4 +1,4 @@
-package me.jonlim.model;
+package me.jonlim.swolemate.model;
 
 public class ExerciseSet extends BaseEntity {
 

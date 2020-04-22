@@ -1,6 +1,6 @@
-package me.jonlim.services.map;
+package me.jonlim.swolemate.services.map;
 
-import me.jonlim.model.BaseEntity;
+import me.jonlim.swolemate.model.BaseEntity;
 
 import java.util.*;
 

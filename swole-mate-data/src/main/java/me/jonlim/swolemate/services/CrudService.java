@@ -1,4 +1,4 @@
-package me.jonlim.services;
+package me.jonlim.swolemate.services;
 
 import java.util.Set;
 

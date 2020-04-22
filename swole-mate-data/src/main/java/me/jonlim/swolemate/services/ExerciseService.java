@@ -1,6 +1,6 @@
-package me.jonlim.services;
+package me.jonlim.swolemate.services;
 
-import me.jonlim.model.Exercise;
+import me.jonlim.swolemate.model.Exercise;
 
 public interface ExerciseService extends CrudService<Exercise, Long> {
 
